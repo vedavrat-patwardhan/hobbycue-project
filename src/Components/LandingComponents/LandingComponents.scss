@@ -1,0 +1,211 @@
+//---------------------------------- Sign-In-Form ----------------------------//
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  .form__options {
+    margin-bottom: 1.5rem;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form__login-btn {
+      text-transform: none;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-right: 2.125rem;
+      color: #939ca3;
+      border-radius: 0;
+      padding: 0;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+      }
+    }
+    .form__login-btn--active {
+      color: #8064a2;
+      padding-bottom: 2px;
+      border-bottom: 2px solid #8064a2;
+    }
+  }
+  .form__inputs {
+    height: 2.5rem;
+    padding: 0.75rem;
+    background: #ffffff;
+    border: 1px solid #ebedf0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    color: #939ca3;
+  }
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.75rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 1.5rem 0;
+    .MuiTypography-body1 {
+      text-align: start;
+      line-height: 1.25rem;
+    }
+    .form__footer__btns {
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      &:hover {
+        text-decoration: underline;
+      }
+      .lock-icon {
+        color: #939ca3;
+        vertical-align: sub;
+        font-size: 1rem;
+        margin-right: 0.625rem;
+      }
+    }
+  }
+  .form__submit-btn {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    background: #8064a2;
+    text-transform: none;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    &:hover {
+      background: #9575bb;
+    }
+  }
+  .form__separator {
+    margin-bottom: 1.5rem;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    & > span {
+      position: relative;
+      display: inline-block;
+    }
+    & > span:before,
+    & > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 2px;
+      background: #ced4da;
+    }
+    & > span:before {
+      right: 100%;
+      margin-right: 0.5rem;
+    }
+    & > span:after {
+      left: 100%;
+      margin-left: 0.5rem;
+    }
+    .separator__txt {
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+  }
+  .form__google {
+    width: 100%;
+    background: transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 1.5rem;
+    border: 1px solid #8064a2;
+    padding-left: 1.5rem;
+    &::before {
+      content: url("../Assets/Google.svg");
+      position: relative;
+      top: 4px;
+    }
+    &:hover {
+      background-color: #dfdce4;
+      box-shadow: inset 0px 0px 0px 1px #9575bb;
+    }
+  }
+  .form__facebook {
+    width: 100%;
+    background: transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 1.5rem;
+    border: 1px solid #8064a2;
+    padding-left: 1.5rem;
+    &::before {
+      content: url("../Assets/Facebook.svg");
+      position: relative;
+      top: 4px;
+    }
+    &:hover {
+      background-color: #dfdce4;
+      box-shadow: inset 0px 0px 0px 1px #9575bb;
+    }
+  }
+}
+.forget-pass {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #8064a2;
+  width: fit-content;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #8064a2;
+  margin-bottom: 2.5rem;
+}
+.forget-pass__info {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #6d747a;
+}
+.forget-pass-btn {
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  background: #8064a2;
+  text-transform: none;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  &:hover {
+    background: #9575bb;
+  }
+}
+.verify-mail-popup--close {
+  position: fixed;
+  top: 14.125rem;
+  margin-left: 31.5rem;
+  color: #fff;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    top: 12.125rem;
+    margin-left: 22rem;
+  }
+}
+.forget-pass-popup--close {
+  top: 9.125rem;
+  @media (max-width: 768px) {
+    top: 3.125rem;
+    margin-left: 13.5rem;
+  }
+}
+.forget-pass__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6d747a;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 0.25rem;
+}
